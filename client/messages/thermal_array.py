@@ -1,8 +1,8 @@
 import json
-from client.messages.message import Message
+from .message import Message
 
 class ThermalArray(Message):
         
     # Constructor to initialize thermal array message
-    def __init__(self, message, timestamp):
-        super().__init__('thermal_array', message, timestamp)
+    def __init__(self, content, timestamp):
+        super().__init__('thermal_array', content, timestamp)

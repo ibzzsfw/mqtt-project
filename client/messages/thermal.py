@@ -1,8 +1,8 @@
 import json
-from client.messages.message import Message
+from .message import Message
 
 class Thermal(Message):
     
     # Constructor to initialize thermal message
-    def __init__(self, message, timestamp):
-        super().__init__('thermal', message, timestamp)
+    def __init__(self, content, timestamp):
+        super().__init__('thermal', content, timestamp)
