@@ -14,3 +14,11 @@
  Constraints:
 - Client can only send at most 250 bytes in one message.
 """
+
+# Import client packages
+from client import MqttClient
+from client import ExcelReader
+
+reader = ExcelReader('input.xlsx')
+reader.readExcel('node1', 'Time')
+reader.printDataframe()

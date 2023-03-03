@@ -1,21 +1,13 @@
-import excel_reader as reader
+"""Client package."""
 
-"""
-    Test Script for ExcelReader class
-"""
-filePath = "D:\Project\mqtt-project\input.xlsx"
+# Import messages module
+from .messages.humidity import Humidity
+from .messages.message import Message
+from .messages.temperature import Temperature
+from .messages.thermal import Thermal
 
-# Create an object of ExcelReader class
-excel_reader = reader.ExcelReader(filePath)
+# Import reader module
+from .reader.excel_reader import ExcelReader
 
-# Read excel file
-excel_reader.read_excel()
-
-# Read excel sheet
-excel_reader.read_excel_sheet("node1")
-
-# Print excel file
-excel_reader.print_excel()
-
-# Print excel sheet
-excel_reader.print_excel_sheet("node1")
+# import client class
+from .mqtt_client import MqttClient
