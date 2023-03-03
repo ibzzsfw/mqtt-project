@@ -1,3 +1,5 @@
+"""Super class for all messages types"""
+
 import json
 
 class Message:
@@ -12,7 +14,7 @@ class Message:
     
     # Function to create message (dictionary format)
     def createMessage(self, content, timestamp, type):
-        if (content == None & timestamp == None & type == None) :
+        if (content and timestamp and type) :
             temp = {
                 "time": timestamp,
                 "type": type,

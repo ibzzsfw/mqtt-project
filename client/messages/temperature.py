@@ -1,3 +1,4 @@
+"""Temperature message class. Child class of Message class."""
 from .message import Message
 
 class Temperature(Message):

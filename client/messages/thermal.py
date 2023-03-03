@@ -1,3 +1,4 @@
+"""Thermal message class. Child class of Message class."""
 import json
 from .message import Message
 
