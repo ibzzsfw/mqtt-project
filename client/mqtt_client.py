@@ -10,13 +10,13 @@
 - Client can only send at most 250 bytes in one message.
 """
 
-import threading
+# import threading
 import time
 
 import paho.mqtt.client as mqtt
-from sensor_reader import SensorReader
+from .sensor_reader import SensorReader
 
-# from logger.logger import Logger
+from logger import Logger
 
 MAX_PAYLOAD_SIZE = 250
 READ_INTERVAL = 0.1  # * 60  # 3 minutes
@@ -39,8 +39,8 @@ class MQTTClient():
         self.client.on_disconnect = self.on_disconnect
         # self.on_publish = self.on_publish
         # self.on_message = self.on_message
-        self.client.loop_start()
 
+        self.client.loop_start()
         self.send_sensor_data(self.node_id, self.sheet_name)
 
     def send_sensor_data(self, node_id, sheet_name):
@@ -74,11 +74,12 @@ class MQTTClient():
         self.client.loop_stop()
 
 
-if __name__ == '__main__':
-    """
-    Client1: localhost:1883, 1001, input.xlsx, node1
-    Client2: localhost:1883, 1002, input.xlsx, node2
-    """
+"""
+    if __name__ == '__main__':
+    
+    # Client1: localhost:1883, 1001, input.xlsx, node1
+    # Client2: localhost:1883, 1002, input.xlsx, node2
+
     clients = []
     # Threding clients
     client1 = threading.Thread(target=MQTTClient, args=(
@@ -104,3 +105,4 @@ if __name__ == '__main__':
 
     for client in clients:
         client.join()
+"""

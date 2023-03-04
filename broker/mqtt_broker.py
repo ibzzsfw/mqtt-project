@@ -15,7 +15,6 @@ from logger import Logger
 BROKER_IP = '127.0.0.1'
 BROKER_PORT = 1883
 
-
 class MQTTBroker(Logger):
     def __init__(self, broker_ip, broker_port):
         super().__init__('broker')
@@ -41,6 +40,7 @@ class MQTTBroker(Logger):
         if msg.topic.endswith('log'):
             self.info(msg=bytes(msg.payload).decode('utf-8'))
 
-
+"""
 if __name__ == '__main__':
     broker = MQTTBroker(BROKER_IP, BROKER_PORT)
+"""

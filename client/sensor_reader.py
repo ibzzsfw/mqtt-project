@@ -7,6 +7,7 @@ import os
 
 import pandas as pd
 
+# Minimum and maximum values for sensor readings
 HUMIDITY_MIN = 0
 HUMIDITY_MAX = 100
 TEMPERATURE_MIN = 0

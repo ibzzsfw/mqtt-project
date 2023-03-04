@@ -11,10 +11,12 @@ Constraints:
 - Multiple IoT nodes and servers can be deployed in the system. If Server subscribes data from several clients, all the data is stored in the same database table.
 """
 
-import threading
+# import threading
 
 import paho.mqtt.client as mqtt
-from database import Database
+
+from .database import Database
+from logger import Logger
 
 
 class MQTTServer():
@@ -53,7 +55,7 @@ class MQTTServer():
         self.db.insert_data(node_id, time, humidity,
                             temperature, thermal_array)
 
-
+"""
 if __name__ == '__main__':
 
     servers = []
@@ -79,3 +81,4 @@ if __name__ == '__main__':
 
     for server in servers:
         server.join()
+"""
