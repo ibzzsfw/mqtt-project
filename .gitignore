@@ -166,3 +166,6 @@ poetry.toml
 
 # ruff
 .ruff_cache/
+
+# excel temp files
+~$*.xlsx
