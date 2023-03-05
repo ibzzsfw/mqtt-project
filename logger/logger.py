@@ -5,7 +5,7 @@ class Logger:
         self.name = name
         self.logger = logging.getLogger(self.name)
         self.logger.setLevel(logging.DEBUG)
-        fh = logging.FileHandler('mqtt_broker.log')
+        fh = logging.FileHandler(self.name+'.log')
         fh.setLevel(logging.DEBUG)
         ch = logging.StreamHandler()
         ch.setLevel(logging.DEBUG)
