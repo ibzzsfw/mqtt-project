@@ -12,6 +12,7 @@ Schema:
 
 import sqlite3
 
+
 class Database:
     def __init__(self, db_path):
         self.db_path = db_path
@@ -33,50 +34,23 @@ class Database:
         self.cursor.execute("SELECT * FROM sensor_data")
         return self.cursor.fetchall()
 
-    def get_data_by_id(self, id: int):
-        self.cursor.execute(
-            "SELECT * FROM sensor_data WHERE id = ?", (id,))
-        return self.cursor.fetchone()
-
     def get_data_by_node_id(self, node_id: int):
         self.cursor.execute(
-            "SELECT * FROM sensor_data WHERE node_id = ?", (node_id,))
+            "SELECT * FROM sensor_data WHERE node_id = ?", (node_id))
         return self.cursor.fetchall()
 
-    def get_data_by_time(self, time: str):
+    def get_data_by_sensor(self, sensor: str):
         self.cursor.execute(
-            "SELECT * FROM sensor_data WHERE time = ?", (time,))
+            f"SELECT node_id, time, ? from sensor_data", (sensor))
         return self.cursor.fetchall()
-
-    def get_data_by_humidity(self, humidity: float):
-        self.cursor.execute(
-            "SELECT * FROM sensor_data WHERE humidity = ?", (humidity,))
-        return self.cursor.fetchall()
-
-    def get_data_by_temperature(self, temperature: float):
-        self.cursor.execute(
-            "SELECT * FROM sensor_data WHERE temperature = ?", (temperature,))
-        return self.cursor.fetchall()
-
-    def get_data_by_thermal_array(self, thermal_array: str):
-        self.cursor.execute(
-            "SELECT * FROM sensor_data WHERE thermal_array = ?", (thermal_array,))
-        return self.cursor.fetchall()
-
-    def update_data_by_id(self, id: int, node_id: int, time: str, humidity: float, temperature: float, thermal_array: str):
-        self.cursor.execute(
-            "UPDATE sensor_data SET node_id = ?, time = ?, humidity = ?, temperature = ?, thermal_array = ? WHERE id = ?",
-            (node_id, time, humidity, temperature, thermal_array, id))
-        self.conn.commit()
-
-    def delete_data_by_id(self, id: int):
-        self.cursor.execute(
-            "DELETE FROM sensor_data WHERE id = ?", (id,))
-        self.conn.commit()
 
     def delete_all_data(self):
         self.cursor.execute("DELETE FROM sensor_data")
         self.conn.commit()
+
+    def raw_query(self, query: str):
+        self.cursor.execute(query)
+        return self.cursor.fetchall()
 
     def close(self):
         self.conn.close()

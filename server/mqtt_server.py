@@ -47,6 +47,11 @@ class MQTTServer():
             self.client.publish(f"server/log", f"server {ip}:{port} subscribed to {topic}")
             self.client.subscribe(topic)
 
+    def disconnect(self):
+        self.client.publish(f"server/log", f"server {self.db_path} disconnected")
+        self.client.disconnect()
+        self.client.loop_stop()
+
     def on_disconnect(self, client, userdata, rc):
         ip = client._sock.getpeername()[0]
         port = client._sock.getpeername()[1]

@@ -59,47 +59,53 @@ class MQTTClient():
             info = f"{node_id};{data_size}"
 
             # Send info
-            self.client.publish("client/log", f"client sending information {data_size} to {self.node_id}/info")
-            self.client.publish(f"{self.node_id}/info", info)
+            self.client.publish(
+                "client/log", f"client sending information {data_size} to {self.node_id}/info")
+            self.client.publish(f"{self.node_id}/ack", info)
 
             # Check payload size
             if data_size > MAX_PAYLOAD_SIZE:
-                chunks_size = MAX_PAYLOAD_SIZE - len(node_id) - len(str(data_size)) - 2
-                chunks = [data_string[i:i+chunks_size] for i in range(0, data_size, chunks_size)]
-
-
+                chunks_size = MAX_PAYLOAD_SIZE - \
+                    len(node_id) - len(str(data_size)) - 2
+                chunks = [data_string[i:i+chunks_size]
+                          for i in range(0, data_size, chunks_size)]
 
                 # Send each chunks as a separate payload along with node_id and data_size as prefixes
-                self.client.publish("client/log", f"client {self.node_id} requested {data_size} byte(s)")
+                self.client.publish(
+                    "client/log", f"client {self.node_id} requested {data_size} byte(s)")
                 for chunk in chunks:
-                    payload = f"{node_id}/{data_size}/{chunk}" # node id/expected length/data chunk
-                    self.client.publish("client/log", f"client {self.node_id} sent {len(payload)} byte(s) in {self.topic}")
+                    # node id/expected length/data chunk
+                    payload = f"{node_id}/{data_size}/{chunk}"
+                    self.client.publish(
+                        "client/log", f"client {self.node_id} sent {len(payload)} byte(s) in {self.topic}")
                     # self.client.publish("client/log", f"{payload}")
-                    self.client.publish(self.topic, payload)              
+                    self.client.publish(self.topic, payload)
                 time.sleep(READ_INTERVAL)
-            
+
             else:
                 # Send data in one message
                 payload = f"{node_id}/{data_size}/{data_string}"
                 self.client.publish(self.topic, payload)
                 time.sleep(READ_INTERVAL)
 
-                
-            self.client.publish("client/log", f"client {self.node_id} sent {self.topic}")
+            self.client.publish(
+                "client/log", f"client {self.node_id} sent {self.topic}")
 
-        self.client.publish(f'client/log', f'client {self.node_id} disconnected')
         self.client.disconnect()
 
     def on_connect(self, client, userdata, flags, rc):
         ip = client._sock.getpeername()[0]
         port = client._sock.getpeername()[1]
-        self.client.publish(f'client/log', f'client {ip}:{port} connected as client {self.node_id}')
+        self.client.publish(
+            f'client/log', f'client {ip}:{port} connected as client {self.node_id}')
 
     def on_disconnect(self, client, userdata, rc):
         ip = client._sock.getpeername()[0]
         port = client._sock.getpeername()[1]
 
     def disconnect(self):
+        self.client.publish(
+            f'client/log', f'client {self.node_id} disconnected')
         self.client.disconnect()
         self.client.loop_stop()
 
