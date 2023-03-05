@@ -25,23 +25,22 @@ if __name__ == '__main__':
         '127.0.0.1',
         1883,
         'server/server1',
-        ['1001/data', '1002/data']
+        ['1001/data', '1002/data', '1001/info', '1002/info']
     ))
+    
     server2 = threading.Thread(target=MQTTServer, args=(
         '127.0.0.1',
         1883,
         'server/server2',
-        ['1001/data', '1002/data']
+        ['1001/data', '1002/data', '1001/info', '1002/info']
     ))
 
     servers.append(server1)
     servers.append(server2)
-    
 
     for server in servers:
         server.start()
 
     for server in servers:
         server.join()
-
 
