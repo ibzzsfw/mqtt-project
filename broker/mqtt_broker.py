@@ -41,5 +41,5 @@ class MQTTBroker(Logger):
     # method on_message is called when broker receives a message
     def on_message(self, client, userdata, msg):
         """Callback when broker receives a message"""
-        if msg.topic.endswith('log'):
+        if msg.topic.endswith('log') or msg.topic.endswith('data'):
             self.info(msg=bytes(msg.payload).decode('utf-8'))
