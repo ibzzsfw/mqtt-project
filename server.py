@@ -1,24 +1,14 @@
-"""
-    Information about the client and server threads:
-
-    Client1: localhost:1883, 1001, input.xlsx, node1
-    Client2: localhost:1883, 1002, input.xlsx, node2
-
-    Broker: localhost:1883
-
-    Server1: localhost:1883, server1, ['1001/data', '1002/data']
-    Server2: localhost:1883, server2, ['1001/data', '1002/data']
-"""
-
 # Import Libraries
+import os
 import signal
 import sys
-import os
-
-import sqlite3
 
 # Import Packages
-from server import MQTTServer, Database
+from server import Database, MQTTServer
+
+# Broker Info
+BROKER_IP = '127.0.0.1'
+BROKER_PORT = 1883
 
 
 def signal_handler(sig, frame):
@@ -44,13 +34,18 @@ if __name__ == '__main__':
         db_path = 'server1'
     topics = input('Enter topics (comma splitted): ').split(',')
     if topics == ['']:
-        topics = ['1001/data', '1002/data, 1001/ack, 1002/ack']
+        topics = ['1001/data', '1002/data', '1001/ack', '1002/ack']
 
     mode = input("Enter mode\n1: start a server\n2: query database\n> ")
+    """
+    The server has 2 modes:
+    1: start a server: start a server that will listen to the topics and store the data in the database
+    2: query database: query the database for data
+    """
     if mode == '1':
         print("PRESS CTRL+C TO STOP SERVER")
         # Running server
-        MQTTServer(host, port, db_path, topics)
+        server = MQTTServer(host, port, db_path, topics)
 
     if mode == '2':
         # check if database exists
@@ -62,6 +57,13 @@ if __name__ == '__main__':
 
         menu = int(input(
             "1: Query all data\n2: Query data by sensor\n3: Query data by node\n4: SQL query\n> "))
+        """
+        The database query menu:
+        1: Query all data: query all data from the database
+        2: Query data by sensor: query data by sensor from the database by asking the user for the sensor
+        3: Query data by node: query data by node from the database by asking the user for the nodeId
+        4: SQL query: query the database by asking the user for any SQL query
+        """
         fetched = []
         if menu == 1:
             fetched = db.get_all_data()
@@ -72,12 +74,12 @@ if __name__ == '__main__':
 
         if menu == 3:
             # Query data by node
-            node = input("Enter node: ")
-            fetched = db.get_data_by_node_id(node)
+            node_id = input("Enter node id: ")
+            fetched = db.get_data_by_node_id(node_id)
 
         if menu == 4:
             query = input("Enter SQL query: ")
             fetched = db.raw_query(query)
 
         print(fetched)
-        print("Server stopped")
+        print("Server stopped after query")

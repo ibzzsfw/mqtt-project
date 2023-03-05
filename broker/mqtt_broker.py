@@ -8,12 +8,8 @@ Constraints:
 
 import paho.mqtt.client as mqtt
 
-# from client.mqtt_client import MQTTClient
-# from server.mqtt_server import MQTTServer
 from logger import Logger
 
-BROKER_IP = '127.0.0.1'
-BROKER_PORT = 1883
 
 class MQTTBroker(Logger):
     def __init__(self, broker_ip, broker_port):
@@ -31,16 +27,14 @@ class MQTTBroker(Logger):
         self.broker.loop_forever()
 
     def on_connect(self, client, userdata, flags, rc):
+        """Callback when broker connects to broker"""
         self.info(f"broker {self.broker_ip}:{self.broker_port} connected")
 
     def on_disconnect(self, client, userdata, rc):
+        """Callback when broker disconnects from broker"""
         self.info(f"broker {self.broker_ip}:{self.broker_port} disconnected")
 
     def on_message(self, client, userdata, msg):
+        """Callback when broker receives a message"""
         if msg.topic.endswith('log'):
             self.info(msg=bytes(msg.payload).decode('utf-8'))
-
-"""
-if __name__ == '__main__':
-    broker = MQTTBroker(BROKER_IP, BROKER_PORT)
-"""

@@ -1,11 +1,11 @@
 """
 Schema:
     - id: primary key, uuid
-    - node_id: 4-digit node id
+    - nodeId: 4-digit node id
     - time: current time (Date, hours, minutes)
     - humidity: relative humidity readings are between 0 to 100 percent
     - temperature: temperature readings are between 0 to 90 degree celsius
-    - thermal_array: 24×32 where each array value represents a temperature reading between 5 to 60 degree celsius
+    - thermalArray: 24×32 where each array value represents a temperature reading between 5 to 60 degree celsius
 """
 
 import sqlite3

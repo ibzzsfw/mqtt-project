@@ -24,47 +24,48 @@ class MQTTServer():
         self.broker_ip = broker_ip
         self.broker_port = broker_port
         self.db_path = db_path
-        self.buffersize = 0;
+        self.buffersize = 0
         self.buffer = ''
         self.data_chunks = {}
         self.topics = topics
         self.client = mqtt.Client()
-        self.client.connect(self.broker_ip, self.broker_port, 10)
+        self.client.connect(self.broker_ip, self.broker_port)
         self.client.on_connect = self.on_connect
-        self.client.on_disconnect = self.on_disconnect
         self.client.on_message = self.on_message
 
         # Connect to the database
         self.db = Database(self.db_path + '.sqlite')
         self.db.delete_all_data()
+
+        self.ip = ""
+        self.port = 0
+
         self.client.loop_forever()
 
     def on_connect(self, client, userdata, flags, rc):
-        ip = client._sock.getpeername()[0]
-        port = client._sock.getpeername()[1]
-        self.client.publish(f"server/log", f"server {ip}:{port} connected")
+        self.ip = client._sock.getpeername()[0]
+        self.port = client._sock.getpeername()[1]
+        self.client.publish(
+            f"server/log", f"server {self.ip}:{self.port} connected")
         for topic in self.topics:
-            self.client.publish(f"server/log", f"server {ip}:{port} subscribed to {topic}")
+            self.client.publish(
+                f"server/log", f"server {self.ip}:{self.port} subscribed to {topic}")
             self.client.subscribe(topic)
 
     def disconnect(self):
-        self.client.publish(f"server/log", f"server {self.db_path} disconnected")
+        self.client.publish(
+            f"server/log", f"server {self.ip}:{self.port} disconnected")
         self.client.disconnect()
         self.client.loop_stop()
-
-    def on_disconnect(self, client, userdata, rc):
-        ip = client._sock.getpeername()[0]
-        port = client._sock.getpeername()[1]
-        self.client.publish(f"server/log", f"server {ip}:{port} disconnected")
 
     def on_message(self, client, userdata, msg):
 
         if msg.topic.endswith('data'):
             print(f"Received messages: {msg.payload.decode()}")
-            
+
             # Split the message into its components
             node_id, expected_length, data_chunk = msg.payload.decode().split('/')
-            
+
             # Convert the expected length to an integer
             expected_length = int(expected_length)
             if node_id not in self.data_chunks:
@@ -76,43 +77,17 @@ class MQTTServer():
 
             # Check if all the chunks have been received
             if sum(len(chunk) for chunk in self.data_chunks[node_id]) == expected_length:
-                
+
                 # Concatenate the chunks into a single string
                 data_string = ''.join(self.data_chunks[node_id])
-                
+
                 # Split the data string into its components
-                node_id, time, humidity, temperature, thermal_array = data_string.split(';')
-                
+                node_id, time, humidity, temperature, thermal_array = data_string.split(
+                    ';')
+
                 # Insert the data into the database
-                self.db.insert_data(node_id, time, humidity, temperature, thermal_array)
-                
+                self.db.insert_data(node_id, time, humidity,
+                                    temperature, thermal_array)
+
                 # Reset the list of chunks for this node_id
                 self.data_chunks[node_id] = []
-
-"""
-if __name__ == '__main__':
-
-    servers = []
-
-    server1 = threading.Thread(target=MQTTServer, args=(
-        'localhost',
-        1883,
-        'server1',
-        ['1001/data', '1002/data']
-    ))
-    server2 = threading.Thread(target=MQTTServer, args=(
-        'localhost',
-        1883,
-        'server2',
-        ['1001/data', '1002/data']
-    ))
-
-    servers.append(server1)
-    servers.append(server2)
-
-    for server in servers:
-        server.start()
-
-    for server in servers:
-        server.join()
-"""

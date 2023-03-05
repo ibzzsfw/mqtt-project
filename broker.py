@@ -1,27 +1,34 @@
-"""
-    Information about the client and server threads:
-
-    Client1: localhost:1883, 1001, input.xlsx, node1
-    Client2: localhost:1883, 1002, input.xlsx, node2
-
-    Broker: localhost:1883
-
-    Server1: localhost:1883, server1, ['1001/data', '1002/data']
-    Server2: localhost:1883, server2, ['1001/data', '1002/data']
-"""
-
 # Import Libraries
-# import threading
+import signal
+import sys
 
 # Import Packages
 from broker import MQTTBroker
-
 
 # Broker Info
 BROKER_IP = '127.0.0.1'
 BROKER_PORT = 1883
 
+
+def signal_handler(sig, frame):
+    print('Keyboard interrupt detected, stopping server...')
+    sys.exit(0)
+
+
+signal.signal(signal.SIGINT, signal_handler)
+
 # If running as main
 if __name__ == '__main__':
-    # Create broker
-    broker = MQTTBroker(BROKER_IP, BROKER_PORT)
+
+    host = input("Broker IP: ")
+    if host == '':
+        host = BROKER_IP
+    port = input("Broker Port: ")
+    if port == '':
+        port = BROKER_PORT
+    else:
+        port = int(port)
+
+    print("PRESS CTRL+C TO STOP SERVER")
+    # Start broker
+    MQTTBroker(host, port)
