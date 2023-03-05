@@ -1,8 +1,12 @@
-# MQTT-based IoT application
+# 📡 MQTT-based IoT application
 
-This is a project that aims to design and implement a MQTT-based IoT application that sends sensor readings from an IoT node to a remote database. The system consists of three entities - Client (IoT node), Broker, and Server.
+## General Information
 
-## Architecture
+### 🎯 Aim, Objective, and Goal
+
+This is a project that aims to design and implement a MQTT-based IoT application that sends sensor readings from an IoT node to a remote database. Our goal is to create  and simulate MQTT-based system which composes of broker, server, and client. We want to be able to run multiple client reading data from given excel and send all those data to multiple server, which have its own database, via broker.
+
+### 📦 Architecture
 
 ![Blank_diagram](https://user-images.githubusercontent.com/100426625/222967222-f96c0019-571f-4516-86f9-29885aadbd58.png)
 
@@ -12,16 +16,7 @@ The client is responsible for reading the sensor data and publishing it to the b
 
 The client and server communicate with the broker using the MQTT protocol. MQTT is a lightweight publish-subscribe messaging protocol that is widely used in IoT applications.
 
-## Getting Started
-
-To get started with this project, you will need to have some prerequisites:
-
-- Python 3.6 or higher installed.
-- A basic understanding of MQTT protocol.
-- Knowledge of programming languages such as Python and SQL.
-- MQTT Broker (such as Mosquitto) installed.
-
-## Files
+### 📁 Files Description
 
 The following is a description of the files in this project:
 
@@ -43,7 +38,16 @@ The following is a description of the files in this project:
 
 Full description are available in each file.
 
-## Installation
+# 🛠 Getting Started
+
+To get started with this project, you will need to have some prerequisites:
+
+- Python 3.6 or higher installed.
+- A basic understanding of MQTT protocol.
+- Knowledge of programming languages such as Python and SQL.
+- MQTT Broker (such as Mosquitto) installed.
+
+## 📥 Installation
 
 1. Clone the repository
 
@@ -57,7 +61,7 @@ git clone https://github.com/ibzzsfw/mqtt-project.git
 pip install -r requirements.txt
 ```
 
-## Running the application
+## 🚴 Running the application
 
 1. Start the broker
 
