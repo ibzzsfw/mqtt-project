@@ -21,7 +21,7 @@ To get started with this project, you will need to have some prerequisites:
 - Knowledge of programming languages such as Python and SQL.
 - MQTT Broker (such as Mosquitto) installed.
 
-# Files
+## Files
 
 The following is a description of the files in this project:
 
