@@ -15,8 +15,8 @@ import time
 import paho.mqtt.client as mqtt
 from .sensor_reader import SensorReader
 
-MAX_PAYLOAD_SIZE = 250
-READ_INTERVAL = 0.1
+MAX_PAYLOAD_SIZE = 250 # bytes
+READ_INTERVAL = 3 * 60 # 3 minutes
 
 
 class MQTTClient():

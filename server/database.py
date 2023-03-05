@@ -39,7 +39,7 @@ class Database:
     def get_data_by_node_id(self, node_id: int):
         try:
             self.cursor.execute(
-                f"SELECT * FROM SensorData WHERE nodeId = {node_id}")
+                f"SELECT nodeId, time, humidity, temperature, thermalArray FROM SensorData WHERE nodeId = {node_id}")
             return self.cursor.fetchall()
         except Exception as e:
             return [e]
