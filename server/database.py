@@ -1,8 +1,6 @@
-import sqlite3
-
 """
 Schema:
-    - id: primary key
+    - id: primary key, uuid
     - node_id: 4-digit node id
     - time: current time (Date, hours, minutes)
     - humidity: relative humidity readings are between 0 to 100 percent
@@ -11,6 +9,7 @@ Schema:
 """
 
 import sqlite3
+import uuid
 
 
 class Database:
@@ -22,35 +21,47 @@ class Database:
 
     def create_table(self):
         self.cursor.execute(
-            "CREATE TABLE IF NOT EXISTS sensor_data (id INTEGER PRIMARY KEY AUTOINCREMENT, node_id INTEGER, time TEXT, humidity REAL, temperature REAL, thermal_array TEXT)")
+            "CREATE TABLE IF NOT EXISTS SensorData (id TEXT PRIMARY KEY, nodeId INTEGER, time TEXT, humidity REAL, temperature REAL, thermalArray TEXT)")
         self.conn.commit()
 
     def insert_data(self, node_id: int, time: str, humidity: float, temperature: float, thermal_array: str):
         self.cursor.execute(
-            "INSERT INTO sensor_data (node_id, time, humidity, temperature, thermal_array) VALUES (?, ?, ?, ?, ?)", (node_id, time, humidity, temperature, thermal_array))
+            "INSERT INTO SensorData VALUES (?, ?, ?, ?, ?, ?)", (str(uuid.uuid4()), node_id, time, humidity, temperature, thermal_array))
         self.conn.commit()
 
     def get_all_data(self):
-        self.cursor.execute("SELECT * FROM sensor_data")
-        return self.cursor.fetchall()
+        try:
+            self.cursor.execute("SELECT * FROM SensorData")
+            return self.cursor.fetchall()
+        except Exception as e:
+            return [e]
 
     def get_data_by_node_id(self, node_id: int):
-        self.cursor.execute(
-            "SELECT * FROM sensor_data WHERE node_id = ?", (node_id))
-        return self.cursor.fetchall()
+        try:
+            self.cursor.execute(
+                f"SELECT * FROM SensorData WHERE nodeId = {node_id}")
+            return self.cursor.fetchall()
+        except Exception as e:
+            return [e]
 
     def get_data_by_sensor(self, sensor: str):
-        self.cursor.execute(
-            f"SELECT node_id, time, ? from sensor_data", (sensor))
-        return self.cursor.fetchall()
+        try:
+            self.cursor.execute(
+                f"SELECT nodeId, time, {sensor} FROM SensorData")
+            return self.cursor.fetchall()
+        except Exception as e:
+            return [e]
 
     def delete_all_data(self):
-        self.cursor.execute("DELETE FROM sensor_data")
+        self.cursor.execute("DELETE FROM SensorData")
         self.conn.commit()
 
     def raw_query(self, query: str):
-        self.cursor.execute(query)
-        return self.cursor.fetchall()
+        try:
+            self.cursor.execute(query)
+            return self.cursor.fetchall()
+        except Exception as e:
+            return [e]
 
     def close(self):
         self.conn.close()

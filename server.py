@@ -46,7 +46,7 @@ if __name__ == '__main__':
     if topics == ['']:
         topics = ['1001/data', '1002/data, 1001/ack, 1002/ack']
 
-    mode = input("Enter mode (1: start a server, 2: query database): ")
+    mode = input("Enter mode\n1: start a server\n2: query database\n> ")
     if mode == '1':
         print("PRESS CTRL+C TO STOP SERVER")
         # Running server
@@ -61,30 +61,23 @@ if __name__ == '__main__':
         db = Database(f"{db_path}.sqlite")
 
         menu = int(input(
-            "1 to query all data\n2 to query data by sensor\n3 to query data by node\n4 SQL query\n: "))
+            "1: Query all data\n2: Query data by sensor\n3: Query data by node\n4: SQL query\n> "))
         fetched = []
         if menu == 1:
-            # Query all data
             fetched = db.get_all_data()
         if menu == 2:
             # Query data by topic
             sensor = input("Enter sensor: ")
-            # Query data by topic
             fetched = db.get_data_by_sensor(sensor)
 
         if menu == 3:
             # Query data by node
             node = input("Enter node: ")
-            # Query data by node
             fetched = db.get_data_by_node_id(node)
 
         if menu == 4:
-            # SQL query
             query = input("Enter SQL query: ")
-            # SQL query
             fetched = db.raw_query(query)
 
-        if fetched == []:
-            print("Invalid input")
-            sys.exit(0)
         print(fetched)
+        print("Server stopped")
