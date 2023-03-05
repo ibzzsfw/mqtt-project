@@ -11,12 +11,9 @@ Constraints:
 - Multiple IoT nodes and servers can be deployed in the system. If Server subscribes data from several clients, all the data is stored in the same database table.
 """
 
-# import threading
-
 import paho.mqtt.client as mqtt
 
 from .database import Database
-from logger import Logger
 
 
 class MQTTServer():
@@ -42,6 +39,7 @@ class MQTTServer():
 
         self.client.loop_forever()
 
+    # The callback for when the client receives a CONNACK response from the server.
     def on_connect(self, client, userdata, flags, rc):
         self.ip = client._sock.getpeername()[0]
         self.port = client._sock.getpeername()[1]
@@ -52,12 +50,14 @@ class MQTTServer():
                 f"server/log", f"server {self.ip}:{self.port} subscribed to {topic}")
             self.client.subscribe(topic)
 
+    # The callback for when a PUBLISH message is received from the server.
     def disconnect(self):
         self.client.publish(
             f"server/log", f"server {self.ip}:{self.port} disconnected")
         self.client.disconnect()
         self.client.loop_stop()
 
+    # The callback for when a PUBLISH message is received from the server.
     def on_message(self, client, userdata, msg):
 
         if msg.topic.endswith('data'):

@@ -19,16 +19,19 @@ class Database:
         self.cursor = self.conn.cursor()
         self.create_table()
 
+    # Create table if not exists
     def create_table(self):
         self.cursor.execute(
             "CREATE TABLE IF NOT EXISTS SensorData (id TEXT PRIMARY KEY, nodeId INTEGER, time TEXT, humidity REAL, temperature REAL, thermalArray TEXT)")
         self.conn.commit()
 
+    # Insert data into table
     def insert_data(self, node_id: int, time: str, humidity: float, temperature: float, thermal_array: str):
         self.cursor.execute(
             "INSERT INTO SensorData VALUES (?, ?, ?, ?, ?, ?)", (str(uuid.uuid4()), node_id, time, humidity, temperature, thermal_array))
         self.conn.commit()
 
+    # Get all data from table
     def get_all_data(self):
         try:
             self.cursor.execute("SELECT * FROM SensorData")
@@ -36,6 +39,7 @@ class Database:
         except Exception as e:
             return [e]
 
+    # Get data by node id
     def get_data_by_node_id(self, node_id: int):
         try:
             self.cursor.execute(
@@ -44,6 +48,7 @@ class Database:
         except Exception as e:
             return [e]
 
+    # Get data by sensor
     def get_data_by_sensor(self, sensor: str):
         try:
             self.cursor.execute(
@@ -52,10 +57,12 @@ class Database:
         except Exception as e:
             return [e]
 
+    # Get data by node id and sensor
     def delete_all_data(self):
         self.cursor.execute("DELETE FROM SensorData")
         self.conn.commit()
 
+    # Delete data by node id
     def raw_query(self, query: str):
         try:
             self.cursor.execute(query)
@@ -63,5 +70,6 @@ class Database:
         except Exception as e:
             return [e]
 
+    # Close connection
     def close(self):
         self.conn.close()

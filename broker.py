@@ -20,6 +20,9 @@ signal.signal(signal.SIGINT, signal_handler)
 # If running as main
 if __name__ == '__main__':
 
+    """For any prompt, if no input is given, the default value will be used"""
+
+    # Get broker info
     host = input("Broker IP: ")
     if host == '':
         host = BROKER_IP
@@ -30,5 +33,6 @@ if __name__ == '__main__':
         port = int(port)
 
     print("PRESS CTRL+C TO STOP SERVER")
+    
     # Start broker
     MQTTBroker(host, port)

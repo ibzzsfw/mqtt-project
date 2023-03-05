@@ -21,12 +21,15 @@ signal.signal(signal.SIGINT, signal_handler)
 # If running as main
 if __name__ == '__main__':
 
+    """For any prompt, if no input is given, the default value will be used"""
+
+    # Get user input
     host = input('Enter broker ip: ')
     if host == '':
-        host = 'localhost'
+        host = BROKER_IP
     port = input('Enter broker port: ')
     if port == '':
-        port = 1883
+        port = BROKER_PORT
     else:
         port = int(port)
     db_path = input('Enter database path: ')
@@ -53,10 +56,12 @@ if __name__ == '__main__':
             print("Database does not exist")
             sys.exit(0)
 
+        # Initialize database
         db = Database(f"{db_path}.sqlite")
 
         menu = int(input(
-            "1: Query all data\n2: Query data by sensor\n3: Query data by node\n4: SQL query\n> "))
+            "1: Query all data\n2: Query data by sensor\n3: Query data by node\n4: SQL query\n> ")
+        )
         """
         The database query menu:
         1: Query all data: query all data from the database
@@ -78,8 +83,10 @@ if __name__ == '__main__':
             fetched = db.get_data_by_node_id(node_id)
 
         if menu == 4:
+            # Query data by manually inputting SQL query
             query = input("Enter SQL query: ")
             fetched = db.raw_query(query)
 
+        # Print fetched data
         print(fetched)
         print("Server stopped after query")
