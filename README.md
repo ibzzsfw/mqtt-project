@@ -34,7 +34,6 @@ The following is a description of the files in this project:
 - `client.py` - File to run the client application with **main**.
 - `server.py` - File to run the server application with **main**.
 - `requirements.txt` - The list of required packages to run the application.
-- `config.ini` - The configuration file that contains the configuration parameters for the application.
 
 Full description are available in each file.
 

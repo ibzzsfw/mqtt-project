@@ -1,0 +1,376 @@
+2023-03-05 23:03:42,242 - broker - INFO - broker 127.0.0.1:1883 connected
+2023-03-05 23:03:45,690 - broker - INFO - server 127.0.0.1:1883 connected
+2023-03-05 23:03:45,690 - broker - INFO - server 127.0.0.1:1883 subscribed to 1001/data
+2023-03-05 23:03:45,690 - broker - INFO - server 127.0.0.1:1883 subscribed to 1002/data
+2023-03-05 23:03:45,690 - broker - INFO - server 127.0.0.1:1883 subscribed to 1001/ack
+2023-03-05 23:03:45,691 - broker - INFO - server 127.0.0.1:1883 subscribed to 1002/ack
+2023-03-05 23:03:49,498 - broker - INFO - client 127.0.0.1:1883 connected as client 1001
+2023-03-05 23:03:49,574 - broker - INFO - client sending information 4645 to 1001/info
+2023-03-05 23:03:49,574 - broker - INFO - client 1001 requested 4645 byte(s)
+2023-03-05 23:03:49,574 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,574 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,574 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,574 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,574 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,574 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,574 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,574 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,574 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,574 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,574 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,574 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,574 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,575 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,575 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,575 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,575 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,575 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,575 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,575 - broker - INFO - client 1001 sent 95 byte(s) in 1001/data
+2023-03-05 23:03:49,680 - broker - INFO - client 1001 sent 1001/data
+2023-03-05 23:03:49,680 - broker - INFO - client sending information 4644 to 1001/info
+2023-03-05 23:03:49,680 - broker - INFO - client 1001 requested 4644 byte(s)
+2023-03-05 23:03:49,680 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,680 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,680 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,680 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,680 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,680 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,680 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,680 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,680 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,681 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,681 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,681 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,681 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,681 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,681 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,681 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,681 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,681 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,681 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,681 - broker - INFO - client 1001 sent 94 byte(s) in 1001/data
+2023-03-05 23:03:49,787 - broker - INFO - client 1001 sent 1001/data
+2023-03-05 23:03:49,788 - broker - INFO - client sending information 4644 to 1001/info
+2023-03-05 23:03:49,788 - broker - INFO - client 1001 requested 4644 byte(s)
+2023-03-05 23:03:49,788 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,788 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,788 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,788 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,788 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,789 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,789 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,789 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,789 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,789 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,789 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,789 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,789 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,790 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,790 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,791 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,791 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,791 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,791 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,791 - broker - INFO - client 1001 sent 94 byte(s) in 1001/data
+2023-03-05 23:03:49,892 - broker - INFO - client 1001 sent 1001/data
+2023-03-05 23:03:49,892 - broker - INFO - client sending information 4645 to 1001/info
+2023-03-05 23:03:49,892 - broker - INFO - client 1001 requested 4645 byte(s)
+2023-03-05 23:03:49,892 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,892 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,892 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,892 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,892 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,892 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,892 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,892 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,892 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,892 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,892 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,892 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,892 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,893 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,893 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,893 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,893 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,893 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,893 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,893 - broker - INFO - client 1001 sent 95 byte(s) in 1001/data
+2023-03-05 23:03:49,997 - broker - INFO - client 1001 sent 1001/data
+2023-03-05 23:03:49,997 - broker - INFO - client sending information 4645 to 1001/info
+2023-03-05 23:03:49,998 - broker - INFO - client 1001 requested 4645 byte(s)
+2023-03-05 23:03:49,998 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,998 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,998 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,998 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,998 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,998 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,998 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,998 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,998 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,998 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,998 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,998 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,998 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,998 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,998 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,998 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,998 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,998 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,999 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:49,999 - broker - INFO - client 1001 sent 95 byte(s) in 1001/data
+2023-03-05 23:03:50,102 - broker - INFO - client 1001 sent 1001/data
+2023-03-05 23:03:50,103 - broker - INFO - client sending information 4645 to 1001/info
+2023-03-05 23:03:50,103 - broker - INFO - client 1001 requested 4645 byte(s)
+2023-03-05 23:03:50,103 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,103 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,104 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,104 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,104 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,104 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,104 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,104 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,104 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,104 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,105 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,105 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,105 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,105 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,105 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,105 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,105 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,105 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,105 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,106 - broker - INFO - client 1001 sent 95 byte(s) in 1001/data
+2023-03-05 23:03:50,206 - broker - INFO - client 1001 sent 1001/data
+2023-03-05 23:03:50,207 - broker - INFO - client sending information 4645 to 1001/info
+2023-03-05 23:03:50,207 - broker - INFO - client 1001 requested 4645 byte(s)
+2023-03-05 23:03:50,207 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,208 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,208 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,208 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,208 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,208 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,208 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,208 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,209 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,209 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,209 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,209 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,209 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,209 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,209 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,210 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,210 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,212 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,212 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,212 - broker - INFO - client 1001 sent 95 byte(s) in 1001/data
+2023-03-05 23:03:50,309 - broker - INFO - client 1001 sent 1001/data
+2023-03-05 23:03:50,310 - broker - INFO - client sending information 4645 to 1001/info
+2023-03-05 23:03:50,310 - broker - INFO - client 1001 requested 4645 byte(s)
+2023-03-05 23:03:50,310 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,310 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,311 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,311 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,311 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,311 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,311 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,311 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,311 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,311 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,312 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,312 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,312 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,312 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,312 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,312 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,312 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,312 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,312 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,313 - broker - INFO - client 1001 sent 95 byte(s) in 1001/data
+2023-03-05 23:03:50,415 - broker - INFO - client 1001 sent 1001/data
+2023-03-05 23:03:50,416 - broker - INFO - client sending information 4645 to 1001/info
+2023-03-05 23:03:50,416 - broker - INFO - client 1001 requested 4645 byte(s)
+2023-03-05 23:03:50,416 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,416 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,416 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,416 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,416 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,417 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,417 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,417 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,417 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,417 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,417 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,417 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,417 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,417 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,418 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,418 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,418 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,418 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,418 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,418 - broker - INFO - client 1001 sent 95 byte(s) in 1001/data
+2023-03-05 23:03:50,521 - broker - INFO - client 1001 sent 1001/data
+2023-03-05 23:03:50,522 - broker - INFO - client sending information 4645 to 1001/info
+2023-03-05 23:03:50,522 - broker - INFO - client 1001 requested 4645 byte(s)
+2023-03-05 23:03:50,522 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,522 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,522 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,522 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,522 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,522 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,522 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,522 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,523 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,523 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,523 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,523 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,523 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,523 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,523 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,523 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,523 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,523 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,524 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,524 - broker - INFO - client 1001 sent 95 byte(s) in 1001/data
+2023-03-05 23:03:50,628 - broker - INFO - client 1001 sent 1001/data
+2023-03-05 23:03:50,628 - broker - INFO - client sending information 4644 to 1001/info
+2023-03-05 23:03:50,628 - broker - INFO - client 1001 requested 4644 byte(s)
+2023-03-05 23:03:50,628 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,628 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,628 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,628 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,628 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,628 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,629 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,629 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,629 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,629 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,629 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,629 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,629 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,629 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,629 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,629 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,629 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,629 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,629 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,629 - broker - INFO - client 1001 sent 94 byte(s) in 1001/data
+2023-03-05 23:03:50,735 - broker - INFO - client 1001 sent 1001/data
+2023-03-05 23:03:50,736 - broker - INFO - client sending information 4645 to 1001/info
+2023-03-05 23:03:50,736 - broker - INFO - client 1001 requested 4645 byte(s)
+2023-03-05 23:03:50,736 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,736 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,736 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,736 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,736 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,736 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,737 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,737 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,737 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,737 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,737 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,737 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,737 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,738 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,738 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,738 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,738 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,738 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,738 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,739 - broker - INFO - client 1001 sent 95 byte(s) in 1001/data
+2023-03-05 23:03:50,838 - broker - INFO - client 1001 sent 1001/data
+2023-03-05 23:03:50,838 - broker - INFO - client sending information 4645 to 1001/info
+2023-03-05 23:03:50,838 - broker - INFO - client 1001 requested 4645 byte(s)
+2023-03-05 23:03:50,838 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,838 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,838 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,838 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,838 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,838 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,838 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,838 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,839 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,839 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,839 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,839 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,839 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,839 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,839 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,839 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,839 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,839 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,840 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,840 - broker - INFO - client 1001 sent 95 byte(s) in 1001/data
+2023-03-05 23:03:50,945 - broker - INFO - client 1001 sent 1001/data
+2023-03-05 23:03:50,945 - broker - INFO - client sending information 4645 to 1001/info
+2023-03-05 23:03:50,946 - broker - INFO - client 1001 requested 4645 byte(s)
+2023-03-05 23:03:50,946 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,946 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,946 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,946 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,946 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,946 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,947 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,947 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,947 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,947 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,947 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,947 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,947 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,947 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,947 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,948 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,948 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,948 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,948 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:50,948 - broker - INFO - client 1001 sent 95 byte(s) in 1001/data
+2023-03-05 23:03:51,049 - broker - INFO - client 1001 sent 1001/data
+2023-03-05 23:03:51,050 - broker - INFO - client sending information 4645 to 1001/info
+2023-03-05 23:03:51,051 - broker - INFO - client 1001 requested 4645 byte(s)
+2023-03-05 23:03:51,051 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:51,051 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:51,051 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:51,051 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:51,051 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:51,051 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:51,051 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:51,052 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:51,052 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:51,052 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:51,052 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:51,052 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:51,052 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:51,052 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:51,053 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:51,053 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:51,053 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:51,053 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:51,053 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:51,053 - broker - INFO - client 1001 sent 95 byte(s) in 1001/data
+2023-03-05 23:03:51,156 - broker - INFO - client 1001 sent 1001/data
+2023-03-05 23:03:51,157 - broker - INFO - client sending information 4645 to 1001/info
+2023-03-05 23:03:51,157 - broker - INFO - client 1001 requested 4645 byte(s)
+2023-03-05 23:03:51,157 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:51,157 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:51,157 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:51,157 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:51,158 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:51,158 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:51,158 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:51,158 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:51,158 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:51,158 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:51,158 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:51,158 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:51,159 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:51,159 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:51,159 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:51,159 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:51,159 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:51,159 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:51,159 - broker - INFO - client 1001 sent 250 byte(s) in 1001/data
+2023-03-05 23:03:51,159 - broker - INFO - client 1001 sent 95 byte(s) in 1001/data
+2023-03-05 23:03:51,259 - broker - INFO - client 1001 sent 1001/data
+2023-03-05 23:03:51,259 - broker - INFO - client 1001, 127.0.0.1:1883 disconnected
