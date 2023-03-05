@@ -4,6 +4,13 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Unnecessary folders
+archives/
+
+# SQLite database
+*.sqlite3
+*.sqlite
+
 # C extensions
 *.so
 
