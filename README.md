@@ -8,7 +8,9 @@ This is a project that aims to design and implement a MQTT-based IoT application
 
 ### 📦 Architecture
 
-![Blank_diagram](https://user-images.githubusercontent.com/100426625/222967222-f96c0019-571f-4516-86f9-29885aadbd58.png)
+<div style="background-color:white;">
+   <img src="https://user-images.githubusercontent.com/100426625/222967222-f96c0019-571f-4516-86f9-29885aadbd58.png" alt="Blank_diagram">
+</div>
 
 The system consists of three entities - Client (IoT node), Broker, and Server.
 
