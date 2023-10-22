@@ -33,6 +33,6 @@ if __name__ == '__main__':
         port = int(port)
 
     print("PRESS CTRL+C TO STOP SERVER")
-    
+
     # Start broker
     MQTTBroker(host, port)
