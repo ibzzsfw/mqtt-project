@@ -20,20 +20,24 @@ The client and server communicate with the broker using the MQTT protocol. MQTT 
 
 The following is a description of the files in this project:
 
-- `broker/__init__.py` - The `__init__.py` file that makes the `broker` directory a Python package.
-- `broker/mqtt_broker.py` - The MQTT broker class that handles the MQTT protocol.
-- `client/__init__.py` - The `__init__.py` file that makes the `client` directory a Python package.
-- `client/mqtt_client.py` - The MQTT client class that handles the MQTT protocol.
-- `client/sensor_reader.py` - The sensor reader class that reads the sensor data.
-- `logger/__init__.py` - The `__init__.py` file that makes the `logger` directory a Python package.
-- `logger/logger.py` - The logger class that handles logging.
-- `server/__init__.py` - The `__init__.py` file that makes the `server` directory a Python package.
-- `server/database.py` - The database class that handles the database operations.
-- `server/mqtt_server.py` - The MQTT server class that handles the MQTT protocol.
-- `broker.py` - File to run the broker application with **main**.
-- `client.py` - File to run the client application with **main**.
-- `server.py` - File to run the server application with **main**.
+- `broker.py` - File to run the broker application with main.
+- `client.py` - File to run the client application with main.
+- `server.py` - File to run the server application with main.
 - `requirements.txt` - The list of required packages to run the application.
+- `broker` - Directory for broker-related code
+  - `__init__.py` - The `__init__.py` file that makes the broker directory a Python package.
+  - `mqtt_broker.py` - The MQTT broker class that handles the MQTT protocol.
+- `client` - Directory for client-related code
+  - `__init__.py` - The `__init__.py` file that makes the client directory a Python package.
+  - `mqtt_client.py` - The MQTT client class that handles the MQTT protocol.
+  - `sensor_reader.py` - The sensor reader class that reads the sensor data.
+- `logger` - Directory for logging-related code
+  - `__init__.py` - The `__init__.py` file that makes the logger directory a Python package.
+  - `logger.py` - The logger class that handles logging.
+- `server` - Directory for server-related code
+  - `__init__.py` - The `__init__.py` file that makes the server directory a Python package.
+  - `database.py` - The database class that handles the database operations.
+  - `mqtt_server.py` - The MQTT server class that handles the MQTT protocol.
 
 Full description are available in each file.
 
